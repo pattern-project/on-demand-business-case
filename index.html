@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>On demand businss case</title>
+
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/fontawesome.min.css">
+        <link rel="stylesheet" href="pp.css">
+        <link rel="stylesheet" href="main.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- Leave those next 4 lines if you care about users using IE8 -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div id="carouselBusinessCase" class="carousel slide" data-interval="false">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselBusinessCase" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselBusinessCase" data-slide-to="1"></li>
+                <li data-target="#carouselBusinessCase" data-slide-to="2"></li>
+                <li data-target="#carouselBusinessCase" data-slide-to="3"></li>
+                <li data-target="#carouselBusinessCase" data-slide-to="4"></li>
+                <li data-target="#carouselBusinessCase" data-slide-to="5"></li>
+                <li data-target="#carouselBusinessCase" data-slide-to="6"></li>
+                <li data-target="#carouselBusinessCase" data-slide-to="7"></li>
+                <li data-target="#carouselBusinessCase" data-slide-to="8"></li>
+                <li data-target="#carouselBusinessCase" data-slide-to="9"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active ppslide">
+                    <div class="titlecontainer">
+                        <img src="main_icon.png" alt="Icon made of arrows" width="80px" class="centreimage">
+                        <h2>on-Demand Production Benefits Estimator</h2>
+                    </div>
+                    <div class="contentcontainer">
+                        <p class="highlight spacer">Use our interactive tool to estimate the commercial benefits your brand could reap by transitioning to a customer-driven demand production model.</p>
+                        <p class="standard spacer">By answering the following questions about your most recent season's sales, manufacturing costs, and inventory management, you'll get a clear picture of the potential savings and increased sustainability of switching to on-demand production.</p>
+                        <p class="standard spacer"><button id="startbutton" class="btn">Use It Now</button></p>
+                    </div>
+                </div>
+                <div class="carousel-item ppslide">
+                    <div class="contentcontainer spacer">
+                        <p class="question">How many units did your brand produce in the last season?</p>
+                        <p class="question">(Quantity Produced)</p>
+                        <div class="form-group">
+                            <input type="number" step=1 class="form-control ppinput" id="total_units" value=20000>
+                        </div>
+                         <p class="spacer"><button class="btn nextbutton">Next</button></p>
+                    </div>
+                </div>
+                <div class="carousel-item ppslide">
+                    <div class="contentcontainer spacer">
+                        <p class="question">What was the average full price per unit for your last collection?</p>
+                        <p class="question">(Average full price)</p>
+                        <div class="form-group">
+                            <input type="number" step=1 class="form-control ppinput" id="avg_price" value=60>
+                        </div>
+                        <p class="spacer"><button class="btn nextbutton">Next</button></p>
+                    </div>
+                </div>
+                <div class="carousel-item ppslide">
+                    <div class="contentcontainer spacer">
+                        <p class="question">What was the average cost of manufacturing per unit for your latest collection?</p>
+                         <p class="question">(Average Manufacturing Cost)</p>
+                        <div class="form-group">
+                            <input type="number" step=1 class="form-control ppinput" id="avg_man_cost" value=15>
+                        </div>
+                         <p class="spacer"><button class="btn nextbutton">Next</button></p>
+                    </div>
+                </div>
+                <div class="carousel-item ppslide">
+                    <div class="contentcontainer spacer">
+                        <p class="question">Can you provide an approximate breakdown of the percentages of units sold at each price point for your latest collection?</p>
+                        <div class="form-group">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <p class="standard tabletext">Sold at full price</p>
+                                    </td>
+                                    <td>
+                                        <div class="input-group ppinput">
+                                            <input type="number" class="form-control ppinput" aria-label="" id="sold_full_price" value=30>
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">%</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="standard tabletext">Sold at 80% of the original price</p>
+                                    </td>
+                                    <td>
+                                        <div class="input-group ppinput">
+                                            <input type="number" class="form-control ppinput" aria-label=""id="sold_80" value=20>
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">%</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="standard tabletext">Sold at 50% of the original price</p>
+                                    </td>
+                                    <td>
+                                        <div class="input-group ppinput">
+                                            <input type="number" class="form-control ppinput" aria-label=""id="sold_50" value=20>
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">%</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="standard tabletext">Unsold</p>
+                                    </td>
+                                    <td>
+                                        <div class="input-group ppinput">
+                                            <input type="number" class="form-control ppinput" aria-label=""id="sold_0" value=30>
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">%</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                         <p class="spacer"><button class="btn nextbutton">Next</button></p>
+                    </div>
+                </div>
+                <div class="carousel-item ppslide">
+                    <div class="contentcontainer spacer">
+                        <p class="question">Did you encounter stock-outs (selling out of particular sizes/styles early when full price) resulting in potential lost full-price sales?</p>
+                        <div class="form-group">
+                            <select class="form-control ppinput" id="stock_outs">
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+                        </div>
+                         <p class="spacer"><button class="btn nextbutton">Next</button></p>
+                    </div>
+                </div>
+                 <div class="carousel-item ppslide">
+                    <div class="contentcontainer spacer">
+                        <p class="question">If you did encounter stock-outs, can you estimate the percentage of sales you missed out on due to this issue?</p>
+                        <p class="question">(Percentage of Lost Sales)</p>
+                        <div class="input-group ppinput">
+                            <input type="number" class="form-control ppinput" aria-label=""id="missed_sales" value=5>
+                            <div class="input-group-append">
+                                <span class="input-group-text">%</span>
+                            </div>
+                        </div>
+                         <p class="spacer"><button class="btn nextbutton">Next</button></p>
+                    </div>
+                </div>
+                <div class="carousel-item ppslide">
+                    <div class="contentcontainer spacer">
+                        <p class="question">What were your total costs related to inventory management, warehousing, and administration for the latest season's production units?</p>
+                        <p class="question">(Total Overhead Cost)</p>
+                        <div class="form-group">
+                            <input type="number" step=1 class="form-control ppinput" id="overhead_costs" value=50000>
+                        </div>
+                         <p class="spacer"><button class="btn nextbutton">Next</button></p>
+                    </div>
+                </div>
+                <div class="carousel-item ppslide">
+                    <div class="contentcontainer spacer">
+                        <p class="question">If you were to transition to on-demand production, do you anticipate the brand would continue for end-of-season sales at 50% reduction?</p>
+                        <div class="form-group">
+                            <select class="form-control ppinput" id="season_sales">
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                         <p class="spacer"><button class="btn nextbutton">Next</button></p>
+                    </div>
+                </div>  
+                <div class="carousel-item ppslide">
+                    <div class="contentcontainer spacer">
+                        <p class="question">If you transition to on-demand production, do you believe your customers would accept a potentially higher price point, given the increased sustainability of the product?</p>
+                        <p class="question">(New selling price)</p>
+                        <div class="form-group">
+                            <input type="number" step=1 class="form-control ppinput" id="new_price" value=65>
+                        </div>
+                        <p class="question spacer"><button id="getresults" class="btn">Calculate Results</button></p>
+                    </div>
+                </div>             
+            </div>
+            <a class="carousel-control-prev" href="#carouselBusinessCase" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselBusinessCase" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div id="results" class="ppslide">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="highlight">Congratulations on completing our On-Demand Production Benefits Estimator! Here's a summary of the significant improvements your fashion brand could potentially achieve by shifting to on-demand production</p>
+                </div>
+            </div>
+            <div class="row spacer">
+                <div class="col-md-2">
+                    <p class="standard">Profit Margin Increase</p>
+                    <p id="result_profit_margin" class="headline_num">20%</p>
+                    <p class="explainer">This figure indicates the potential rise in your profit margins. By eliminating unsold inventory and precisely matching supply with demand, you could significantly boost profitability.</p>
+                </div>
+                <div class="col-md-2">
+                    <p class="standard">Net profits increase</p>
+                    <p id="result_net_profits" class="headline_num">20%</p>
+                    <p class="explainer">This number represents an estimate of the overall increase in your net profits as a result of adopting on-demand production, which could reduce costs in areas such as inventory management and warehousing.</p>
+                </div>
+                <div class="col-md-2">
+                    <p class="standard">Manufacturing Cost increase</p>
+                    <p id="result_man_costs" class="headline_num">20%</p>
+                    <p class="explainer">This estimate highlights the potential decrease in the number of units produced, reducing waste and creating a more sustainable operation overall.</p>
+                </div>
+                <div class="col-md-2">
+                    <p class="standard">Carbon Reduction for Manufacturing</p>
+                    <p id="result_carbon_reduction" class="headline_num">20%</p>
+                    <p class="explainer">By producing only what is needed, your brand could substantially lower its carbon footprint. This figure shows the estimated reduction in carbon emissions associated with your manufacturing process.</p>
+                </div>
+                <div class="col-md-2">
+                    <p class="standard">Carbon Reduction for Brand</p>
+                    <p id="result_brand_reduction" class="headline_num">...</p>
+                    <p class="explainer">Assuming stock and manufacturing contribute 77% carbon emmission for brand this is how much is would reduce company wide emissions.</p>
+                </div>
+                <div class="col-md-2">
+                    <p class="standard">Reduced Units</p>
+                    <p id="result_unit_reduction" class="headline_num">20%</p>
+                    <p class="explainer">This estimate highlights the potential decrease in the number of units produced, reducing waste and creating a more sustainable operation overall.</p>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+:root {
+    --primary1: rgb(3, 0, 86);
+    --grey: #aaa;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary1);
+
+}
